@@ -18,5 +18,19 @@ config = BashConfigParser(config_file="/opt/cranix-java/conf/cranix-api.properti
 passwd = config.get('de.cranix.dao.User.Register.Password')
 ```
 
+Functions:
+```
+config.get('EXAMPLE_NAME') -> returns value from configuration
+config.set('EXAMPLE_NAME') -> sets value in configuration
+```
+
+Examples:
+```
+config = BashConfigParser(config_file="EXAMPLE_FILE")
+passwd = config.get('PATH_TO_THE_PASSWORD')
+name = config.get('PATH_TO_THE_NAME')
+age = config.get('PATH_TO_THE_AGE')
+```
+
 ## Status
 The module is tested and works fine.
